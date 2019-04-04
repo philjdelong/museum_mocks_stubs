@@ -22,4 +22,16 @@ class Museum
     @patrons << patron
   end
 
+  def patrons_by_name
+    @patrons.map do |patron|
+      patron.name
+    end
+  end
+
+  def average_exhibit_cost
+    @exhibit.sum do |exhibit|
+      exhibit.cost
+    end/@exhibit.length
+  end
+
 end
