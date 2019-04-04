@@ -29,9 +29,9 @@ class Museum
   end
 
   def average_exhibit_cost
-    @exhibit.sum do |exhibit|
+    @exhibits.sum do |exhibit|
       exhibit.cost
-    end/@exhibit.length
+    end/@exhibits.length
   end
 
 end
